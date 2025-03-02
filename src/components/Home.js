@@ -1,9 +1,10 @@
 import React from 'react';
-import './LandingPage.css';
+import './Home.css';
+import Testimonio from './Testimonio';
 
-function LandingPage() {
+function Home() {
   return (
-    <div className="landing-page">
+    <div className="Home">
       <header className="encabezado">
         <h1>Bienvenido a Nuestra LandingPage</h1>
         <p>Un lugar donde encontrarás soluciones increíbles.</p>
@@ -25,17 +26,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="testimonios">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <div className="testimonio">
-          <p>"Excelente servicio, muy recomendado."</p>
-          <p>- Cliente Satisfecho</p>
-        </div>
-        <div className="testimonio">
-          <p>"Me encanta la facilidad de uso."</p>
-          <p>- Otro Cliente Satisfecho</p>
-        </div>
-      </section>
+      <Testimonio/>
 
       <footer className="footer">
         <p>&copy; {new Date().getFullYear()} Mi Empresa. Todos los derechos reservados.</p>
@@ -44,4 +35,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default Home;

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './Navbar.css'
-import Hamburguesa from './Hamburguesa.js';
+import Button from './Button.js';
 
 function Navbar () {
   const [clicked,setclicked] = useState(false)
@@ -22,7 +22,7 @@ function Navbar () {
       </div>
 
       <div className='ocultar'>  
-        <Hamburguesa clicked={clicked}  handleClick={handleClick}/>
+        <Button clicked={clicked}  handleClick={handleClick}/>
       </div>
       <div className={`initial ${clicked ? 'active' : ''}`}></div>
      </nav>   
