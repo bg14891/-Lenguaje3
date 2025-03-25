@@ -21,10 +21,11 @@
   
     color: black;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 2rem;
    
-  
-
+  }
+.alink:hover{
+  color:#007BFF
 }
 
 .hamburguesa{;
@@ -37,6 +38,7 @@
         position: relative;
         cursor: pointer;
         display: inline-block;
+        right: 40%;
         
 
       }
@@ -174,3 +176,21 @@
   
 }
 
+.translate-btn {
+  position: fixed;
+  top: 10px; /* Ajusta la distancia desde el borde superior */
+  right: 3px; /* Ajusta la distancia desde el borde derecho */
+  background-color: transparent;
+  border: none;
+  font-size: 24px; /* Tamaño del ícono */
+  color: #000; /* Color del ícono */
+  cursor: pointer;
+  z-index: 9999; /* Asegúrate de que esté encima de otros elementos */
+  padding: 3px; /* Aumenta el área clickeable */
+  border-radius: 60%;
+
+}
+
+.translate-btn:hover {
+  color: #007BFF; /* Cambia el color al pasar el ratón por encima */
+}
